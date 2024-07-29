@@ -138,5 +138,28 @@
     <footer class="footer">
         <p>&copy; 2024 MindBridge. All rights reserved.</p>
     </footer>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA8ulYmBiqkV5m_TFTlXVbBtIgGFLGp2Xg",
+    authDomain: "mindbridge-efd1f.firebaseapp.com",
+    projectId: "mindbridge-efd1f",
+    storageBucket: "mindbridge-efd1f.appspot.com",
+    messagingSenderId: "709818731793",
+    appId: "1:709818731793:web:4d7d81d6da3e54485790b0",
+    measurementId: "G-D45XEX6ZZS"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
