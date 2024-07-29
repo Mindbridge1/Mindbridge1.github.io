@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBridge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light blue background */
+            color: #004d40; /* Dark teal text color */
+        }
+        header {
+            background-color: #004d40; /* Dark teal background */
+            padding: 1rem;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px; /* Adjust size as needed */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00695c; /* Teal background */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #004d40; /* Dark teal background on hover */
+            color: #e0f7fa; /* Light blue text on hover */
+        }
+        .container {
+            padding: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color: #004d40; /* Dark teal button */
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #00332f; /* Darker teal on hover */
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #00695c; /* Teal background */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image.png" alt="MindBridge Logo">
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+    </nav>
+    <div class="container" id="home">
+        <h2>Welcome to MindBridge</h2>
+        <p>Your mental health is our priority. Connect with AI ChatBots, join group chats, and access professional therapists.</p>
+    </div>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>We aim to provide comprehensive mental health support for first-generation low-income students. Our services include AI-based personal therapists, group therapy sessions, and professional guidance.</p>
+    </div>
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>AI ChatBots as personal therapists</li>
+            <li>Group chats with peers</li>
+            <li>Weekly meetings to share feelings</li>
+            <li>Professional therapists available for hourly sessions</li>
+            <li>Subscription plans for regular support</li>
+        </ul>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container" id="login">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 MindBridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
