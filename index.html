@@ -115,7 +115,7 @@
                 <textarea id="message" name="message"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit">Submit</button>
+                <button onclick="handleClick()">Submit</button>
             </div>
         </form>
     </div>
@@ -160,6 +160,33 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+        function saveToFirebase(email) {
+            var emailObject = {
+                email: email
+            };
+
+            firebase.database().ref('subscription-entries').push().set(emailObject)
+                .then(function(snapshot) {
+                    success(); // some success method
+                }, function(error) {
+                    console.log('error' + error);
+                    error(); // some error method
+                });
+        }
+
+        function success() {
+            alert("Email saved successfully!");
+        }
+
+        function error() {
+            alert("An error occurred while saving the email.");
+        }
+
+        function handleClick() {
+            var email = document.getElementById('email').value;
+            saveToFirebase(email);
+        }
+
 </script>
 </body>
 </html>
